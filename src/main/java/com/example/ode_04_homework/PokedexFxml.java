@@ -1,14 +1,23 @@
 package com.example.ode_04_homework;
 
-import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
-public class PokedexFxml {
-    @FXML
-    private Label welcomeText;
+public class PokedexFxml extends Application {
 
-    @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    @Override
+    public void start(Stage stage) throws Exception {
+
+        FXMLLoader loader = new FXMLLoader(
+                PokedexFxml.class.getResource("hello-view.fxml")
+        );
+
+        Scene scene = loader.load();
+
+        stage.setTitle("Pokedex");
+        stage.setScene(scene);
+        stage.show();
     }
 }

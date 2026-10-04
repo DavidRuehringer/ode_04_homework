@@ -18,7 +18,7 @@ public class PokedexCoded extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        ObservableList<String> pokedex = FXCollections.observableArrayList();
+        ObservableList<String> pokedex = PokedexData.pokedex;
         VBox topvbox = new VBox();
         topvbox.setPadding(new Insets(10));
         topvbox.setSpacing(10);
@@ -42,7 +42,7 @@ public class PokedexCoded extends Application {
         Button btn_remove = new Button("Remove");
         btn_remove.setPrefWidth(200);
         Button btn_clear = new Button("Clear Pokedex");
-        btn_remove.setPrefWidth(200);
+        btn_clear.setPrefWidth(200);
 
         list_pokedex.setItems(pokedex);
         btn_add.setOnAction(e -> {
