@@ -3,7 +3,7 @@ package com.example.ode_04_homework;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class HelloController {
+public class PokedexFxml {
     @FXML
     private Label welcomeText;
 

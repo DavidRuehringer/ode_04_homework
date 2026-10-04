@@ -13,7 +13,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-public class Main extends Application {
+public class PokedexCoded extends Application {
     TextArea txt_log = new TextArea();
 
     @Override
